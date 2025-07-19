@@ -33,6 +33,48 @@
         }
 
         /* Navbar */
+        .hamburger {
+          display: none;
+          flex-direction: column;
+          cursor: pointer;
+          gap: 5px;
+        }
+        .hamburger span {
+          height: 3px;
+          width: 25px;
+          background: #1e90ff;
+          border-radius: 2px;
+          transition: all 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+          .hamburger {
+            display: flex;
+          }
+
+          nav {
+            flex-wrap: wrap;
+          }
+
+          .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            padding: 1rem 0;
+            background: white;
+            gap: 1rem;
+          }
+
+          .nav-links.active {
+            display: flex;
+          }
+
+          .nav-links li {
+            text-align: left;
+            padding: 0 1rem;
+          }
+        }
+
         nav {
           display: flex;
           justify-content: space-between;
