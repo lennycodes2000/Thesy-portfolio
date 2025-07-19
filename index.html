@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theresia Christopher |Digital Marketing Strategist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+
+<nav class="container" aria-label="Primary Navigation">
+    <div class="logo" tabindex="0"> <img src="three.jpg" alt="Theresia Chris">
+
+    </div>
+    <ul role="menubar" aria-label="Main menu">
+        <li role="none"><a role="menuitem" href="#services" class="active">Services</a></li>
+        <li role="none"><a role="menuitem" href="#portfolio">Portfolio</a></li>
+        <li role="none"><a role="menuitem" href="#testimonials">Testimonials</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<header class="hero" role="banner" aria-label="Introduction">
+    <div class="container hero-content">
+        <h1>Fuel Your Business Growth with Digital Marketing Expertise</h1>
+        <p>Theresia Christopher —  Digital Marketing Strategist with 3+ Years Experience in Social Media , SEO && PPC </p>
+        <button class="btn-primary" onclick="scrollToContact()">Book Now</button>
+
+        <nav class="social-icons" aria-label="Social media links">
+            <a href="https://wa.me/255652900956" aria-label="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100027353565614" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/255652900956" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>
+        </nav>
+    </div>
+</header>
+
+<!-- About Me Section -->
+<section id="about" tabindex="0" aria-label="About Me">
+    <div class="container" style="max-width: 900px; display: flex; align-items: center; gap: 2.5rem; flex-wrap: wrap;">
+        <img src="one.jpeg"
+             alt="Profile Picture"
+             style="width: 300px; border-radius: 20px; box-shadow: 0 8px 25px rgba(30,144,255,0.3); object-fit: cover;"/>
+        <div style="flex:1; min-width: 280px;">
+            <h2 style="color:#1e90ff; font-weight: 900; margin-bottom:1rem;">About Me</h2>
+            <p style="font-size: 1.1rem; color: #444;">
+                Hello! I'm Theresia, a Digital Marketing Strategist with over 3 years of experience
+                helping brands grow through data-driven SEO, paid media campaigns, and social media strategies.
+                I am passionate about creating meaningful connections between businesses and their audiences
+                by leveraging modern marketing techniques and tools.
+            </p>
+            <p style="font-size: 1.1rem; color: #444;">
+                Whether you're a startup looking to build your online presence or an established company aiming to scale
+                , I tailor every strategy to fit your unique goals and maximize ROI. Let's work together to take your business to the next level. 🙏
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="contact-widget" onclick="toggleModal()" title="Chat Now" role="button" aria-label="Open contact form" tabindex="0">
+    <i class="fas fa-comment-dots" aria-hidden="true"></i>
+</div>
+
+<div class="modal" id="contactModal" role="dialog" aria-modal="false" aria-labelledby="modalTitle" aria-describedby="modalDesc">
+    <div class="modal-content">
+        <span class="close" onclick="toggleModal()" role="button" aria-label="Close contact form" tabindex="0">&times;</span>
+        <h2 id="modalTitle">Contact Me</h2>
+        <form id="contactForm" aria-describedby="modalDesc" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" name="name" placeholder="Your Name" required aria-required="true" />
+            <input type="email" id="email" name="email" placeholder="Your Email" required aria-required="true" />
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required aria-required="true"></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<section id="services" tabindex="0" aria-label="Services offered">
+    <h2>My Services</h2>
+    <div class="grid-3">
+        <article class="card" tabindex="0" aria-describedby="seoDesc">
+            <img src="four.jpg" alt="SEO Analytics graph"/>
+            <div class="card-content">
+                <h3>Search Engine Optimization (SEO)</h3>
+                <p id="seoDesc">Boost visibility, increase traffic, and climb the search rankings with strategic on-page and technical SEO solutions.</p>
+            </div>
+        </article>
+        <article class="card" tabindex="0" aria-describedby="ppcDesc">
+            <img src="five.webp" alt="Online advertising ads"/>
+            <div class="card-content">
+                <h3>Pay-Per-Click Advertising</h3>
+                <p id="ppcDesc">Drive measurable results through optimized paid ads campaigns across Google, Facebook,Tiktok and Whatsapp.</p>
+            </div>
+        </article>
+        <article class="card" tabindex="0" aria-describedby="smmDesc">
+            <img src="six.webp" alt="Social media marketing"/>
+            <div class="card-content">
+                <h3>Social Media Marketing</h3>
+                <p id="smmDesc">Engage your audience and build brand loyalty with creative content and targeted social campaigns.</p>
+            </div>
+        </article>
+    </div>
+</section>
+
+<section id="testimonials" tabindex="0" aria-label="Client testimonials">
+    <h2>What Clients Say</h2>
+    <div class="grid-3">
+        <article class="testimonial" tabindex="0">
+            <img src="seven.jpeg" alt="Portrait of Nyanzobe." />
+            <p>"Theresia transformed our website's SEO. Our organic traffic increased by 80% in just 6 months!"</p>
+            <strong>Pendo Nyanzobe, CEO of NyanzTech</strong>
+        </article>
+        <article class="testimonial" tabindex="0">
+            <img src="eight.jpeg" alt="Portrait of Emmanuel." />
+            <p>"The PPC campaigns Theresia ran were incredibly effective — our conversions doubled while lowering cost per acquisition."</p>
+            <strong>Emmanuel Elias,  Manager at EllyCorp</strong>
+        </article>
+        <article class="testimonial" tabindex="0">
+            <img src="nine.jpeg" alt="Portrait of Baraka." />
+            <p>"Her social media strategy created real engagement and brand awareness. Highly recommended!"</p>
+            <strong>Baraka Daudi, Founder of HealthPlus</strong>
+        </article>
+    </div>
+</section>
+
+<section id="contact" tabindex="0" aria-label="Contact Me" style="text-align:center; padding-bottom:6rem;">
+    <h2>Get In Touch</h2>
+    <p>Ready to elevate your business? Contact me today for a free consultation.</p>
+    <button class="btn-primary" onclick="toggleModal()">Contact Me</button>
+</section>
+
+<footer>
+    &copy; 2025 Theresia Christopher —  Digital Marketing Strategist. All rights reserved.
+</footer>
+<script>
+    // Wait for the page to load
+    document.addEventListener("DOMContentLoaded", () => {
+      const navLinks = document.querySelectorAll("nav ul li a");
+
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          // Remove 'active' from all links
+          navLinks.forEach(item => item.classList.remove("active"));
+          // Add 'active' to the clicked link
+          this.classList.add("active");
+        });
+      });
+    });
+</script>
+</body>
+</html>
