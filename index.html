@@ -11,16 +11,26 @@
 <body>
 
 <nav class="container" aria-label="Primary Navigation">
-    <div class="logo" tabindex="0"> <img src="three.jpg" alt="Theresia Chris">
-
+    <div class="logo" tabindex="0">
+        <img src="three.jpg" alt="Theresia Chris">
     </div>
-    <ul role="menubar" aria-label="Main menu">
+
+    <!-- Hamburger Button -->
+    <div class="hamburger" aria-label="Toggle menu" tabindex="0">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menu Links -->
+    <ul class="nav-links" role="menubar" aria-label="Main menu">
         <li role="none"><a role="menuitem" href="#services" class="active">Services</a></li>
         <li role="none"><a role="menuitem" href="#portfolio">Portfolio</a></li>
         <li role="none"><a role="menuitem" href="#testimonials">Testimonials</a></li>
         <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
     </ul>
 </nav>
+
 
 <header class="hero" role="banner" aria-label="Introduction">
     <div class="container hero-content">
@@ -146,6 +156,13 @@
         });
       });
     });
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
 </script>
+
 </body>
 </html>
